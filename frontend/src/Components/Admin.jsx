@@ -11,7 +11,7 @@ const Admin = () => {
         try {
             // const response = await axios.get('https://agrismartbackend-mvzkn315n-vaibhav-chauhans-projects.vercel.app/');
             const response = await axios.get('http://localhost:3737/v1/proposeCropPrice');
-            setCropPrices(response.data.data);
+            setCropPrices(response.data.data); 
         } catch (error) {
             console.error('Error fetching crop prices:', error);
         }
